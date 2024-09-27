@@ -6,24 +6,56 @@
     <title>Get Resources</title>
     <script type="module" src="scripts/getting-resources.js"></script>
     <link rel="stylesheet" href="css/getting-resources.css">
+    <link rel="icon" type="image/png" href="images/axe-cursor.png">
 </head>
-<header>
-    <div class="box">
-        <h3>Warriors of Zorath</h3>
-    </div>
 
-</header>
-<section class="money">
-    <div id="gold">
-      <img id="gold-icon" src="images/gold-coin.png" alt="gold">
-    </div>
-    <div id="wood">
-      <img id="wood-icon" src="images/wood.png" alt="wood icon">
-    </div>
-    <div id="metal">
-      <img id="metal-icon" src="images/metal.png" alt="metal icon">
-    </div>
-  </section>
+<header>
+  <div class="box-title">
+    <h3>Warriors of Zorath</h3>
+</div>
+  <nav>
+      <ul>
+          <li><a href="gathering-army.html">Home</a></li>
+          <li><a href="getting-resources.html">Resourses</a></li>
+          <li><a href="your-army.html">Your Army</a></li>
+      </ul>
+  </nav>
+  </header>
+
+  <main>
+      <section class="grid-container">
+          <div>
+              <img class="resources-item" src="images/gold-coin.png" alt="Gold">
+              <span id="gold-count">Gold: 0</span>
+          </div>
+          
+          <div>
+              <img class="resources-item" src="images/metal.png" alt="Metal">
+              <span id="metal-count">Metal: 0</span>
+          </div>
+
+          <div>
+              <img class="resources-item" src="images/wood.png" alt="Wood">
+              <span id="wood-count">Wood: 0</span>
+          </div>
+      </section>
+
+      <!--
+      <section>
+          <article>
+              <h3>Gold and Metal</h3>
+              <img class="gold-mine" id="mine" src="images/mines-of-thiartha.jpg" alt="Mine">
+          </article>
+      </section>
+          
+      <section>
+          <article>
+              <h3>Wood</h3>
+              <img class="wood-forest" id="woods" src="images/woods-of-ghalduz.png" alt="Woods">
+          </article>
+      </section>
+      -->
+  </main>
 <body>
 
 </body>

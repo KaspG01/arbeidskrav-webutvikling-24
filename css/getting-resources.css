@@ -1,47 +1,131 @@
 /*
-    Do you need a dedicated CSS file per HTML page in addition to main.css?
+  -Setter opp gridsystem for responsive 
 */
-body{
-    background-color: #1F271B;
-    cursor: url("images/axe-cursor.png"), auto;
-    
-    
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-gap: 1rem;
 }
-.box{
-   color: aliceblue; 
-   border: 1px none rgb(229, 234, 231);
-   border-bottom: 1px solid rgb(229, 234, 231);
-  font-size: xx-large;
-  width: 1450px;
-  margin-left: -10px;
-  margin-top: -50px;
-  height: 100px;
-background-color: rgba(17, 7, 7, 0.361);
+
+.col-xs-12{
+    grid-column: auto / span 12;
 }
-h3{
-    margin-top: 50px;
-    margin-left: 20px;
-    
+
+.col-xs-6{
+    grid-column: auto / span 6;
+}
+
+.col-xs-4{
+    grid-column: auto / span 4;
+}
+
+@media (min-width > 768px){
+    .col-sm-12{
+        grid-column: auto / span 12;
+    }
+    .col-sm-6{
+        grid-column: auto / span 6;
+    }
+    .col-sm-4{
+        grid-column: auto / span 4;
+    }
+}
+
+@media (min-width > 992px){
+    .col-md-12{
+        grid-column: auto / span 12;
+    }
+    .col-md-6{
+        grid-column: auto / span 6;
+    }
+    .col-md-4{
+        grid-column: auto / span 4;
+    }
 
 }
 
+/*
+    DESIGN PÅ HEADER: 
+*/
 
-.money{
+.box-title{
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 2%;
+    left: 4%;
+    font-size: 32px;
+    color: white;
+    }
+
+header{
+    position: absolute;
     display: flex;
-flex-direction: row;
-gap: 200px 80px;
-justify-content: start;
-margin-top: 15px;
+    justify-content: end;
+    background-color: rgb(54, 90, 43);
+    width: 100%;
+    padding: 1rem;
 }
-#gold-icon{
-    width: 30px;
-  
+
+header ul{
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
 }
-#wood-icon{
-    width: 30px;
+
+header li{
+    margin-right: 24px;
 }
-#metal-icon{
-    width: 30px;
+
+header a{
+    text-decoration: none;
+    color: rgb(184, 149, 44);
+    font-weight: bold;
+    font-size: 24px;
+    text-shadow: 4px 4px 10px rgb(179, 170, 44);
 }
+
+
+
+/*
+    DESIGN PÅ BODY
+*/
+
+body {
+
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(14, 65, 14);
+}
+
+main {
+    height: 40vh;
+    padding: 1rem;
+}
+
+section {
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+/* RESSURSER: */
+.resources-item {
+    padding: 2%;
+    margin: 1rem; 
+    width: 70%;
+    max-width: 600px;
+    height: auto;
+
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
+    background: none;
+    border-radius: 30%;
+}
+
+
+
 
 
