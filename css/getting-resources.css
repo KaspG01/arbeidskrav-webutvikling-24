@@ -52,19 +52,24 @@
     position: absolute;
     margin: 0;
     padding: 0;
-    top: 2%;
+    top: -32px;
     left: 4%;
     font-size: 32px;
     color: white;
+    text-shadow: 4px 4px 10px rgb(179, 170, 44);
     }
 
-header{
+    /* 
+        MENYEN OPPE
+    */
+header{ 
     position: absolute;
     display: flex;
     justify-content: end;
-    background-color: rgb(54, 90, 43);
+    background-color: rgba(17, 7, 7, 0.361);
     width: 100%;
     padding: 1rem;
+    border-bottom: 1px solid rgb(229, 234, 231);
 }
 
 header ul{
@@ -80,10 +85,10 @@ header li{
 
 header a{
     text-decoration: none;
-    color: rgb(184, 149, 44);
+    color: white;
     font-weight: bold;
     font-size: 24px;
-    text-shadow: 4px 4px 10px rgb(179, 170, 44);
+    text-shadow: 4px 4px 8px rgb(179, 170, 44);
 }
 
 
@@ -93,36 +98,76 @@ header a{
 */
 
 body {
-
     height: 100%;
+    width: 100%;
     margin: 0;
     padding: 0;
-    background-color: rgb(14, 65, 14);
+    background-color:#1F271B;
 }
 
-main {
-    height: 40vh;
-    padding: 1rem;
-}
-
-section {
-    display: flex; 
-    flex-wrap: wrap;
-    justify-content: center;
-
-}
 
 /* RESSURSER: */
 .resources-item {
-    padding: 2%;
-    margin: 1rem; 
-    width: 70%;
-    max-width: 600px;
+    position: fixed;
+    top: 16%;
+    width: 5%;
+    max-width: 200px;
     height: auto;
-
     box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5);
     background: none;
     border-radius: 30%;
+}
+
+.gold{
+   left: 34%;
+}
+
+.metal{
+    left: 46%;
+}
+
+.wood{
+    right: 38%;
+}
+
+/*
+    GOLD & METAL MINE:
+*/
+
+.gold-mine{
+    position: absolute;
+    top: 32%;
+    left: 8%;
+    border: 1px solid white;
+    border-radius: 56%;
+    height: 40vh;
+    width: 40%;
+    cursor: pointer;
+}
+
+.gold-mine:hover{
+    height: 48vh;
+    width: 48%;
+    left: 4%;
+    transition: height 1.5s ease-in-out, width 2.5s ease-in-out, left 1.5s ease-in-out;
+}
+
+.wood-forest{
+    position: absolute;
+    top: 32%;
+    right: 2%;
+    border: 1px solid white;
+    border-radius: 56%;
+    height: 40vh;
+    width: 40%;
+    cursor: pointer;
+}
+
+.wood-forest:hover{
+    height: 48vh;
+    width: 48%;
+    right: 2%;
+    transition: height 1.5s ease-in-out, width 2.5s ease-in-out, left 1.5s ease-in-out;
 }
 
 
